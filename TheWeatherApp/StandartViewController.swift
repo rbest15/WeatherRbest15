@@ -12,6 +12,7 @@ class StandartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tempLabel.text = "\(Saver.shared.temp)"
         weatherUpdater()
 
     }
@@ -25,7 +26,19 @@ extension StandartViewController: UICollectionViewDelegateFlowLayout, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = standartTableView.dequeueReusableCell(withReuseIdentifier: "standartCell", for: indexPath) as! StandartCollectionViewCell
+        
+        
+        let dt = Double(weatherDecoded?.list[indexPath.row].dt ?? 0)
+        let date = Date(timeIntervalSince1970: dt)
+        let dateFormated = DateFormatter()
+        dateFormated.dateFormat = "MMM dd HH:mm"
+        
+        cell.dtLabel.text = dateFormated.string(from: date)
+        
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 100, height: 100)
     }
 }
 
@@ -41,7 +54,12 @@ extension StandartViewController {
                 let currentWeather = try JSONDecoder().decode(ForecastDecoder.self, from: data)
                 self.weatherDecoded = currentWeather
                 DispatchQueue.main.async {
-                    self.tempLabel.text = "\(NSString(format: "%.2f",(currentWeather.list[0].main?.temp)! - 273.15))" + " ℃"
+                    
+                    let normalTemp = "\(NSString(format: "%.2f",(currentWeather.list[0].main?.temp)! - 273.15))" as String
+                    
+                    Saver.shared.temp = normalTemp
+                    
+                    self.tempLabel.text = normalTemp + " ℃"
                     self.cityNameLabel.text = self.cityName
                     self.standartTableView.reloadData()
                 }

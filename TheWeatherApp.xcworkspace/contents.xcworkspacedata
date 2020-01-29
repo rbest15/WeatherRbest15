@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/romankuzmich/Documents/Skillbox/TheWeatherApp/TheWeatherApp/StandartScreen/TempSave.swift">
+   </FileRef>
+   <FileRef
       location = "group:TheWeatherApp.xcodeproj">
    </FileRef>
    <FileRef

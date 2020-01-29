@@ -33,13 +33,34 @@
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fqX-nk-aou">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjt-yb-4FO">
+                                                    <rect key="frame" x="22" y="90" width="150" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="GXa-pM-z9h"/>
+                                                        <constraint firstAttribute="height" constant="21" id="izf-nU-uy3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vjt-yb-4FO" firstAttribute="top" secondItem="fqX-nk-aou" secondAttribute="top" constant="5" id="Bm5-LZ-ex8"/>
+                                                <constraint firstAttribute="trailing" secondItem="vjt-yb-4FO" secondAttribute="trailing" constant="5" id="Csx-gY-cst"/>
+                                                <constraint firstAttribute="bottom" secondItem="vjt-yb-4FO" secondAttribute="bottom" constant="5" id="NvL-Rs-guJ"/>
+                                                <constraint firstItem="vjt-yb-4FO" firstAttribute="leading" secondItem="fqX-nk-aou" secondAttribute="leading" constant="5" id="Pu9-bS-u43"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <connections>
+                                            <outlet property="dtLabel" destination="vjt-yb-4FO" id="Eqw-0m-4Qb"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="epb-BM-6JS"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="xeg-Um-dJB"/>
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CityName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjC-bP-fv6">
