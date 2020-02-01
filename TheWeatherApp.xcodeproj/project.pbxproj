@@ -16,6 +16,8 @@
 		6F08961B23E1DBC1009772BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F08961923E1DBC1009772BF /* LaunchScreen.storyboard */; };
 		6F4D9D9C23E1F758008F343A /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D9D9B23E1F758008F343A /* JSONDecoder.swift */; };
 		6F4D9D9E23E2007F008F343A /* TempSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D9D9D23E2007F008F343A /* TempSave.swift */; };
+		6F81C85823E58369008FBC9D /* AlamoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F81C85723E58369008FBC9D /* AlamoViewController.swift */; };
+		6F81C85B23E5846E008FBC9D /* AlamoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F81C85A23E5846E008FBC9D /* AlamoCollectionViewCell.swift */; };
 		6FE1173F23E1E397007D75B5 /* StandartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE1173E23E1E397007D75B5 /* StandartViewController.swift */; };
 		6FE1174423E1E756007D75B5 /* StandartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE1174323E1E756007D75B5 /* StandartCollectionViewCell.swift */; };
 		83728EDD2D92159D507C781A /* Pods_TheWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629714CDA8D39E57D1BF25D0 /* Pods_TheWeatherApp.framework */; };
@@ -34,6 +36,8 @@
 		6F08961C23E1DBC1009772BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F4D9D9B23E1F758008F343A /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
 		6F4D9D9D23E2007F008F343A /* TempSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TempSave.swift; path = /Users/romankuzmich/Documents/Skillbox/TheWeatherApp/TheWeatherApp/StandartScreen/TempSave.swift; sourceTree = "<absolute>"; };
+		6F81C85723E58369008FBC9D /* AlamoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoViewController.swift; sourceTree = "<group>"; };
+		6F81C85A23E5846E008FBC9D /* AlamoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoCollectionViewCell.swift; sourceTree = "<group>"; };
 		6FE1173E23E1E397007D75B5 /* StandartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartViewController.swift; sourceTree = "<group>"; };
 		6FE1174323E1E756007D75B5 /* StandartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartCollectionViewCell.swift; sourceTree = "<group>"; };
 		D23C73D969816A83E9C430BC /* Pods-TheWeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-TheWeatherApp/Pods-TheWeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,7 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				6F4D9D9F23E20402008F343A /* Standart */,
-				6F08960B23E1DBBB009772BF /* AppDelegate.swift */,
+				6F81C85C23E5986E008FBC9D /* Helpers */,
+				6F81C85923E5840E008FBC9D /* Alamo */,
 				6F08960D23E1DBBB009772BF /* SceneDelegate.swift */,
 				6F08960F23E1DBBB009772BF /* ViewController.swift */,
 				6F08961123E1DBBB009772BF /* Main.storyboard */,
@@ -89,12 +94,29 @@
 		6F4D9D9F23E20402008F343A /* Standart */ = {
 			isa = PBXGroup;
 			children = (
-				6F4D9D9D23E2007F008F343A /* TempSave.swift */,
 				6FE1173E23E1E397007D75B5 /* StandartViewController.swift */,
 				6FE1174323E1E756007D75B5 /* StandartCollectionViewCell.swift */,
-				6F4D9D9B23E1F758008F343A /* JSONDecoder.swift */,
 			);
 			name = Standart;
+			sourceTree = "<group>";
+		};
+		6F81C85923E5840E008FBC9D /* Alamo */ = {
+			isa = PBXGroup;
+			children = (
+				6F81C85723E58369008FBC9D /* AlamoViewController.swift */,
+				6F81C85A23E5846E008FBC9D /* AlamoCollectionViewCell.swift */,
+				6F08960B23E1DBBB009772BF /* AppDelegate.swift */,
+			);
+			name = Alamo;
+			sourceTree = "<group>";
+		};
+		6F81C85C23E5986E008FBC9D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6F4D9D9B23E1F758008F343A /* JSONDecoder.swift */,
+				6F4D9D9D23E2007F008F343A /* TempSave.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		F661A66D1706669C4A45BCAB /* Frameworks */ = {
@@ -236,7 +258,9 @@
 				6FE1174423E1E756007D75B5 /* StandartCollectionViewCell.swift in Sources */,
 				6F08960E23E1DBBB009772BF /* SceneDelegate.swift in Sources */,
 				6F4D9D9E23E2007F008F343A /* TempSave.swift in Sources */,
+				6F81C85B23E5846E008FBC9D /* AlamoCollectionViewCell.swift in Sources */,
 				6F4D9D9C23E1F758008F343A /* JSONDecoder.swift in Sources */,
+				6F81C85823E58369008FBC9D /* AlamoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
