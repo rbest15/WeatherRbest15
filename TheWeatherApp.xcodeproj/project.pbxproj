@@ -14,9 +14,8 @@
 		6F08961623E1DBBB009772BF /* TheWeatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F08961423E1DBBB009772BF /* TheWeatherApp.xcdatamodeld */; };
 		6F08961823E1DBC1009772BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F08961723E1DBC1009772BF /* Assets.xcassets */; };
 		6F08961B23E1DBC1009772BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F08961923E1DBC1009772BF /* LaunchScreen.storyboard */; };
+		6F31113E2433AB9100E010CA /* TempSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F31113D2433AB9100E010CA /* TempSave.swift */; };
 		6F4D9D9C23E1F758008F343A /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D9D9B23E1F758008F343A /* JSONDecoder.swift */; };
-		6F4DCBDC23E5C5BE0098EC6C /* TempSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4DCBDB23E5C5BD0098EC6C /* TempSave.swift */; };
-		6F4DCBDE23E5C5C10098EC6C /* TempSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4DCBDD23E5C5C10098EC6C /* TempSave.swift */; };
 		6F81C85823E58369008FBC9D /* AlamoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F81C85723E58369008FBC9D /* AlamoViewController.swift */; };
 		6F81C85B23E5846E008FBC9D /* AlamoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F81C85A23E5846E008FBC9D /* AlamoCollectionViewCell.swift */; };
 		6FE1173F23E1E397007D75B5 /* StandartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE1173E23E1E397007D75B5 /* StandartViewController.swift */; };
@@ -35,9 +34,8 @@
 		6F08961723E1DBC1009772BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F08961A23E1DBC1009772BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F08961C23E1DBC1009772BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F31113D2433AB9100E010CA /* TempSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSave.swift; sourceTree = "<group>"; };
 		6F4D9D9B23E1F758008F343A /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
-		6F4DCBDB23E5C5BD0098EC6C /* TempSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TempSave.swift; path = /Users/romankuzmich/Documents/Skillbox/TheWeatherApp/TheWeatherApp/TempSave.swift; sourceTree = "<absolute>"; };
-		6F4DCBDD23E5C5C10098EC6C /* TempSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TempSave.swift; path = /Users/romankuzmich/Documents/Skillbox/TheWeatherApp/TheWeatherApp/TempSave.swift; sourceTree = "<absolute>"; };
 		6F81C85723E58369008FBC9D /* AlamoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoViewController.swift; sourceTree = "<group>"; };
 		6F81C85A23E5846E008FBC9D /* AlamoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoCollectionViewCell.swift; sourceTree = "<group>"; };
 		6FE1173E23E1E397007D75B5 /* StandartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +83,7 @@
 				6F08960D23E1DBBB009772BF /* SceneDelegate.swift */,
 				6F08960F23E1DBBB009772BF /* ViewController.swift */,
 				6F08961123E1DBBB009772BF /* Main.storyboard */,
+				6F31113D2433AB9100E010CA /* TempSave.swift */,
 				6F08961723E1DBC1009772BF /* Assets.xcassets */,
 				6F08961923E1DBC1009772BF /* LaunchScreen.storyboard */,
 				6F08961C23E1DBC1009772BF /* Info.plist */,
@@ -98,7 +97,6 @@
 			children = (
 				6FE1173E23E1E397007D75B5 /* StandartViewController.swift */,
 				6FE1174323E1E756007D75B5 /* StandartCollectionViewCell.swift */,
-				6F4DCBDB23E5C5BD0098EC6C /* TempSave.swift */,
 			);
 			name = Standart;
 			sourceTree = "<group>";
@@ -117,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				6F4D9D9B23E1F758008F343A /* JSONDecoder.swift */,
-				6F4DCBDD23E5C5C10098EC6C /* TempSave.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -255,13 +252,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F08961623E1DBBB009772BF /* TheWeatherApp.xcdatamodeld in Sources */,
-				6F4DCBDC23E5C5BE0098EC6C /* TempSave.swift in Sources */,
-				6F4DCBDE23E5C5C10098EC6C /* TempSave.swift in Sources */,
 				6F08961023E1DBBB009772BF /* ViewController.swift in Sources */,
 				6FE1173F23E1E397007D75B5 /* StandartViewController.swift in Sources */,
 				6F08960C23E1DBBB009772BF /* AppDelegate.swift in Sources */,
 				6FE1174423E1E756007D75B5 /* StandartCollectionViewCell.swift in Sources */,
 				6F08960E23E1DBBB009772BF /* SceneDelegate.swift in Sources */,
+				6F31113E2433AB9100E010CA /* TempSave.swift in Sources */,
 				6F81C85B23E5846E008FBC9D /* AlamoCollectionViewCell.swift in Sources */,
 				6F4D9D9C23E1F758008F343A /* JSONDecoder.swift in Sources */,
 				6F81C85823E58369008FBC9D /* AlamoViewController.swift in Sources */,
